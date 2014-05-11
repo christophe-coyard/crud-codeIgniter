@@ -13,8 +13,9 @@ Install
 
 3. Declare the database table associate with the model
 
+
 	class user_model extends MY_Model {
-	protected $table = 'user';
+		protected $table = 'user';
 		
 		// Your code here
 	}
