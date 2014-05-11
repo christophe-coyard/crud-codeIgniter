@@ -34,3 +34,9 @@ The 4 CRUD functions (create, find, update, delete) can be call directly from yo
 		}
 	
 	}
+
+
+More
+==
+
+If you speak french, more information on this tuto : http://deercreation.fr/article/developper-un-systeme-de-crud-avec-codeigniter
