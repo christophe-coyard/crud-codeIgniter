@@ -6,7 +6,8 @@ class MY_Model extends CI_Model {
 
 
 	/**
-	* Créé un nouvel enregistrement avec les valeurs passées en paramètre et retourne son id
+	* EN : Create a new record with the values ​​passed as parameters and returns its id
+	* FR : Créée un nouvel enregistrement avec les valeurs passées en paramètre et retourne son id
 	**/
 	public function create($values) {
 		if ($this->db->set($values)->insert($this->table)) return $this->db->insert_id();
@@ -15,7 +16,8 @@ class MY_Model extends CI_Model {
 
 
 	/**
-	* Recherche les enregistrements correspondants aux condiditions passées en paramètres
+	* EN : Return the records matching passed as parameters condiditions 
+	* FR : Recherche les enregistrements correspondants aux condiditions passées en paramètres
 	**/
 	public function find($where = array()) {
 		$req = $this->db->get_where($this->table, $where);
@@ -25,7 +27,8 @@ class MY_Model extends CI_Model {
 
 	
 	/**
-	* Met à jour les enregistrements en fonction des condiditions passées en paramètres
+	* EN : Updates records based on condiditions passed as parameters
+	* FR : Met à jour les enregistrements en fonction des condiditions passées en paramètres
 	**/
 	public function update($where, $value) {
 		return $this->db->where($where)->update($this->table, $value);
@@ -34,7 +37,8 @@ class MY_Model extends CI_Model {
 
 
 	/**
-	* Supprime les enregistrements en fonction des condiditions passées en paramètres
+	* EN : Deletes records based on condiditions passed as parameters
+	* FR : Supprime les enregistrements en fonction des condiditions passées en paramètres
 	**/
 	public function delete($where) {
 		return $this->db->where($where)->delete($this->table);
